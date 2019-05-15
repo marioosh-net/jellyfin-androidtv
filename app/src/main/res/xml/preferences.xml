@@ -139,4 +139,13 @@
             />
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/pref_subtitles_cat" android:key="pref_subtitles_category">
+
+        <EditTextPreference android:key="pref_subtitles_size"
+            android:title="@string/lbl_subtitles_size"
+            android:defaultValue="32"
+            />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

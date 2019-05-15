@@ -315,6 +315,7 @@
     <string name="pref_use_external_player_summary">Requires a capable app to play video types</string>
     <string name="pref_use_direct_path_title">Pass Direct Path</string>
     <string name="pref_use_direct_path_summary">Pass the file system path instead of streaming url</string>
-
+    <string name="pref_subtitles_cat">SUBTITLES</string>
+    <string name="lbl_subtitles_size">Subtitles size</string>
 
 </resources>
