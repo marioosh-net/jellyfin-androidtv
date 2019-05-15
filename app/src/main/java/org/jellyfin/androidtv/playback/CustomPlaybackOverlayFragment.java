@@ -359,7 +359,7 @@ public class CustomPlaybackOverlayFragment extends Fragment implements IPlayback
 
         //manual subtitles
         mSubtitleText = (TextView) mActivity.findViewById(R.id.offLine_subtitleText);
-        mSubtitleText.setTextSize(32);
+        mSubtitleText.setTextSize(R.integer.subTitlesTextSize);
         mSubtitleText.setShadowLayer(1.6f,1.5f,1.3f, Color.BLACK);
         updateManualSubtitlePosition();
 

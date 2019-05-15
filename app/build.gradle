@@ -23,6 +23,19 @@ android {
         }
     }
 
+    /**
+     * to test on PC debug version ?
+     * INSTALL_FAILED_NO_MATCHING_ABIS
+     */
+    splits {
+        abi {
+            enable gradle.startParameter.taskNames.contains(":app:assembleGoogleDebug") || gradle.startParameter.taskNames.contains(":app:assembleAmazonDebug")
+            reset()
+            include 'x86', 'armeabi-v7a'
+            universalApk false
+        }
+    }
+
     flavorDimensions "version"
     productFlavors {
         google {
