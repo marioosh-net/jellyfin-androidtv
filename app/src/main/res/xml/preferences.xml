@@ -145,7 +145,10 @@
             android:title="@string/lbl_subtitles_size"
             android:defaultValue="32"
             />
-
+        <EditTextPreference android:key="pref_subtitles_offset"
+            android:title="@string/lbl_subtitles_offset"
+            android:defaultValue="0"
+            />
     </PreferenceCategory>
 
 </PreferenceScreen>
