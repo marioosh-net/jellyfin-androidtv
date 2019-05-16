@@ -363,7 +363,7 @@ public class CustomPlaybackOverlayFragment extends Fragment implements IPlayback
         mSubtitleText.setShadowLayer(1.6f,1.5f,1.3f, Color.BLACK);
         ViewGroup.LayoutParams lp = mSubtitleText.getLayoutParams();
         if(lp instanceof ViewGroup.MarginLayoutParams) {
-            ((ViewGroup.MarginLayoutParams)lp).topMargin = Integer.parseInt(mApplication.getPrefs().getString("pref_subtitles_offset","0"));
+            ((ViewGroup.MarginLayoutParams)lp).bottomMargin = Integer.parseInt(mApplication.getPrefs().getString("pref_subtitles_offset","0"));
             mSubtitleText.setLayoutParams(lp);
         }
         updateManualSubtitlePosition();
