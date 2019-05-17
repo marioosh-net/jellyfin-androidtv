@@ -5,3 +5,9 @@ android:
     - android-28
 script:
     - ./gradlew build check
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file: "app/build/outputs/apk/google/release/app-google-release.apk"
+  skip_cleanup: true
+  draft: true
