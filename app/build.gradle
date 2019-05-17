@@ -14,16 +14,16 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("../../keystore.jks")
-            storePassword "password"
+            storeFile file("../keystore.jks")
+            storePassword System.getenv("KEYSTORE_PASS")
             keyAlias "alias"
-            keyPassword "password"
+            keyPassword System.getenv("KEYSTORE_PASS")
         }
         release {
-            keyAlias 'alias'
-            keyPassword 'password'
-            storeFile file("../../keystore.jks")
-            storePassword 'password'
+            storeFile file("../keystore.jks")
+            storePassword System.getenv("KEYSTORE_PASS")
+            keyAlias "alias"
+            keyPassword System.getenv("KEYSTORE_PASS")
         }
     }
 
